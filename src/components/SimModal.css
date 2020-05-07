@@ -1,0 +1,90 @@
+.ScrollOverlay {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.ClickableOverlay {
+  min-height: 100%;
+  background: rgba(9, 30, 66, 0.54);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 50px 50px 50px;
+}
+
+.Modal {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #232323;
+  max-width: 640px;
+  vertical-align: top;
+  border-radius: 3px;
+  box-shadow: 1px 1px 6px #e1e1e1;
+  padding: 1rem;
+}
+
+.Modal-Container {
+  margin: 1rem auto;
+}
+
+.Modal-GridRow {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.Modal-Btn {
+  height: 35px;
+  flex-basis: 20%;
+  border: 1px solid #000000;
+  -ms-flex: auto;
+  width: 350px;
+  position: relative;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-right: 0.5rem;
+}
+
+.ModalHeader {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.ModalHeaderContainer {
+  flex-grow: 1;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.ModalHeaderTitle {
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: none;
+}
+
+.CloseIcon {
+  position: absolute;
+  font-size: 25px;
+  color: black;
+  transition: all 0.1s;
+  cursor: pointer;
+  top: 10px;
+  right: 12px;
+  padding: 3px 5px 0px 5px;
+  border-radius: 4px;
+}
